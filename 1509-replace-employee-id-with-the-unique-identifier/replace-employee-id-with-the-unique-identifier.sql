@@ -5,6 +5,6 @@
 -- ON Employees.id = EmployeeUNI.id 
 
 Select unique_id ,name 
-from Employees 
-left join EmployeeUNI
-on Employees.id = EmployeeUNI.id
+from Employees as e
+left join EmployeeUNI as eu
+on e.id = eu.id
